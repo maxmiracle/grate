@@ -1,0 +1,10 @@
+E:\Work\Private\grate\Main\Grate\GrateTest\bin\Debug\GrateTest.dll
+E:\Work\Private\grate\Main\Grate\GrateTest\bin\Debug\GrateTest.pdb
+E:\Work\Private\grate\Main\Grate\GrateTest\bin\Debug\Grate.exe
+E:\Work\Private\grate\Main\Grate\GrateTest\bin\Debug\Grate.pdb
+E:\Work\Private\grate\Main\Grate\GrateTest\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\Private\grate\Main\Grate\GrateTest\obj\Debug\GrateTest.dll
+E:\Work\Private\grate\Main\Grate\GrateTest\obj\Debug\GrateTest.pdb
+E:\Work\Private\grate\Main\Grate\GrateTest\obj\Debug\GrateTest.ColorGroupTreeTest.resources
+E:\Work\Private\grate\Main\Grate\GrateTest\obj\Debug\GenerateResource.read.1.tlog
+E:\Work\Private\grate\Main\Grate\GrateTest\obj\Debug\GenerateResource.write.1.tlog

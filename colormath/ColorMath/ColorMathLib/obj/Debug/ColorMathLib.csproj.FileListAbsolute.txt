@@ -1,0 +1,11 @@
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\bin\Debug\ColorMathLib.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\bin\Debug\ColorMathLib.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\bin\Debug\CustomColorPicker.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\bin\Debug\CustomColorPicker.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\obj\Debug\ColorMathLib.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\obj\Debug\View\ColorWeightNpcList.baml
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\obj\Debug\View\ColorWeightNpcList.g.cs
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\obj\Debug\ColorMathLib_MarkupCompile.cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\obj\Debug\ColorMathLib.g.resources
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\obj\Debug\ColorMathLib.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMathLib\obj\Debug\ColorMathLib.pdb

@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ColorMathLib.View.ColorWeightNpcList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ccp="clr-namespace:DropDownCustomColorPicker;assembly=CustomColorPicker"
+             mc:Ignorable="d" 
+             d:DesignHeight="288" d:DesignWidth="169">
+    <Grid>
+        <ListBox Margin="0,32,0,0" Name="colorList">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <ccp:CustomColorPicker SelectedColor="{Binding Path=Color, Mode=TwoWay}">
+                        </ccp:CustomColorPicker>
+                        <CheckBox IsChecked="{Binding Path=IsSelected, Mode=TwoWay}"></CheckBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Content="add" Height="24" HorizontalAlignment="Left" Margin="4,4,0,0" Name="addItem" VerticalAlignment="Top" Width="38" Click="addItem_Click" />
+        <Button Content="remove" Height="24" HorizontalAlignment="Left" Margin="48,4,0,0" Name="removeItem" VerticalAlignment="Top" Width="53" Click="removeItem_Click" />
+    </Grid>
+</UserControl>

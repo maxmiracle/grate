@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="66d75357-f7b2-41b8-9961-225952da068b" name="VasilyevMG@MSKVASILYEVMG 2010-11-16 12:01:52" runUser="INFOTECS-NT\VasilyevMG" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="035cc9c9-8984-4213-b556-25dbc67b8846">
+    <Deployment runDeploymentRoot="VasilyevMG_MSKVASILYEVMG 2010-11-16 12_01_52">
+      <DeploymentItem filename="E:\Work\Private\grate\Main\Grate\Grate\bin\Debug\Grate.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-11-16T12:01:52.5236250+03:00" queuing="2010-11-16T12:01:53.5996110+03:00" start="2010-11-16T12:01:53.7399570+03:00" finish="2010-11-16T12:07:21.8995638+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestByHumanVision" storage="e:\work\private\grate\main\grate\gratetest\bin\debug\gratetest.dll" id="15c2f06f-e23d-313d-2989-2650d8c262c3">
+      <Execution id="3a7d794b-b023-44a5-91ad-b53ffc0caa2d" />
+      <TestMethod codeBase="E:/Work/Private/grate/Main/Grate/GrateTest/bin/Debug/GrateTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GrateTest.ColorNodeTest, GrateTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestByHumanVision" />
+    </UnitTest>
+    <UnitTest name="TestColorSumWeight" storage="e:\work\private\grate\main\grate\gratetest\bin\debug\gratetest.dll" id="22b04911-9e44-c08a-6bd6-e6ba638de2ee">
+      <Execution id="6a04cf35-cc92-43bf-a85f-5f93da07e2eb" />
+      <TestMethod codeBase="E:/Work/Private/grate/Main/Grate/GrateTest/bin/Debug/GrateTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GrateTest.ColorNodeTest, GrateTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestColorSumWeight" />
+    </UnitTest>
+    <UnitTest name="TestColorNodeAddTwoNodes" storage="e:\work\private\grate\main\grate\gratetest\bin\debug\gratetest.dll" id="d4970e81-7977-8100-0f94-f2685882908e">
+      <Execution id="e74275f2-be38-4b23-bd87-4d98560d5a7c" />
+      <TestMethod codeBase="E:/Work/Private/grate/Main/Grate/GrateTest/bin/Debug/GrateTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GrateTest.ColorNodeTest, GrateTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestColorNodeAddTwoNodes" />
+    </UnitTest>
+    <UnitTest name="TestContructorColorNode" storage="e:\work\private\grate\main\grate\gratetest\bin\debug\gratetest.dll" id="201cc5f2-caac-4be9-a6b5-9b3643babc8c">
+      <Execution id="e8ebccda-999a-4a6a-881e-08af94364dc9" />
+      <TestMethod codeBase="E:/Work/Private/grate/Main/Grate/GrateTest/bin/Debug/GrateTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GrateTest.ColorNodeTest, GrateTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestContructorColorNode" />
+    </UnitTest>
+    <UnitTest name="TestContructorColorNodeException" storage="e:\work\private\grate\main\grate\gratetest\bin\debug\gratetest.dll" id="6014812e-de32-adb5-9bca-85c2a17a3bae">
+      <Execution id="26a692ce-e972-4be2-bf5b-1ef52e6b3b47" />
+      <TestMethod codeBase="E:/Work/Private/grate/Main/Grate/GrateTest/bin/Debug/GrateTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GrateTest.ColorNodeTest, GrateTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestContructorColorNodeException" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="201cc5f2-caac-4be9-a6b5-9b3643babc8c" executionId="e8ebccda-999a-4a6a-881e-08af94364dc9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4970e81-7977-8100-0f94-f2685882908e" executionId="e74275f2-be38-4b23-bd87-4d98560d5a7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6014812e-de32-adb5-9bca-85c2a17a3bae" executionId="26a692ce-e972-4be2-bf5b-1ef52e6b3b47" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22b04911-9e44-c08a-6bd6-e6ba638de2ee" executionId="6a04cf35-cc92-43bf-a85f-5f93da07e2eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15c2f06f-e23d-313d-2989-2650d8c262c3" executionId="3a7d794b-b023-44a5-91ad-b53ffc0caa2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e8ebccda-999a-4a6a-881e-08af94364dc9" testId="201cc5f2-caac-4be9-a6b5-9b3643babc8c" testName="TestContructorColorNode" computerName="MSKVASILYEVMG" duration="00:00:35.3639206" startTime="2010-11-16T12:01:53.8491150+03:00" endTime="2010-11-16T12:02:31.3838730+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8ebccda-999a-4a6a-881e-08af94364dc9">
+    </UnitTestResult>
+    <UnitTestResult executionId="e74275f2-be38-4b23-bd87-4d98560d5a7c" testId="d4970e81-7977-8100-0f94-f2685882908e" testName="TestColorNodeAddTwoNodes" computerName="MSKVASILYEVMG" duration="00:00:40.5604052" startTime="2010-11-16T12:02:31.3838730+03:00" endTime="2010-11-16T12:03:12.3720240+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e74275f2-be38-4b23-bd87-4d98560d5a7c">
+    </UnitTestResult>
+    <UnitTestResult executionId="26a692ce-e972-4be2-bf5b-1ef52e6b3b47" testId="6014812e-de32-adb5-9bca-85c2a17a3bae" testName="TestContructorColorNodeException" computerName="MSKVASILYEVMG" duration="00:00:12.2569758" startTime="2010-11-16T12:03:12.3876314+03:00" endTime="2010-11-16T12:03:24.6550478+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26a692ce-e972-4be2-bf5b-1ef52e6b3b47">
+    </UnitTestResult>
+    <UnitTestResult executionId="6a04cf35-cc92-43bf-a85f-5f93da07e2eb" testId="22b04911-9e44-c08a-6bd6-e6ba638de2ee" testName="TestColorSumWeight" computerName="MSKVASILYEVMG" duration="00:00:00.0016740" startTime="2010-11-16T12:03:24.6706552+03:00" endTime="2010-11-16T12:03:24.6862626+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a04cf35-cc92-43bf-a85f-5f93da07e2eb">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a7d794b-b023-44a5-91ad-b53ffc0caa2d" testId="15c2f06f-e23d-313d-2989-2650d8c262c3" testName="TestByHumanVision" computerName="MSKVASILYEVMG" duration="00:03:56.9787205" startTime="2010-11-16T12:03:24.6862626+03:00" endTime="2010-11-16T12:07:21.7903120+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a7d794b-b023-44a5-91ad-b53ffc0caa2d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

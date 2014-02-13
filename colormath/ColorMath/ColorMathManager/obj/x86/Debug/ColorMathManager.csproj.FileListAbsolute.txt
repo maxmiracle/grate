@@ -1,0 +1,16 @@
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\bin\Debug\ColorMathManager.exe
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\bin\Debug\ColorMathManager.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\bin\Debug\ColorMapView.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\bin\Debug\ColorMathLib.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\bin\Debug\ColorMapView.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\bin\Debug\ColorMathLib.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\ColorMathManager.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\MainWindow.baml
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\MainWindow.g.cs
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\App.g.cs
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\ColorMathManager_MarkupCompile.cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\ColorMathManager.g.resources
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\ColorMathManager.Properties.Resources.resources
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\ColorMathManager.csproj.GenerateResource.Cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\ColorMathManager.exe
+F:\Work\Private\grate\colormath\ColorMath\ColorMathManager\obj\x86\Debug\ColorMathManager.pdb

@@ -1,0 +1,17 @@
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\bin\Debug\ColorMapView.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\bin\Debug\ColorMapView.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\bin\Debug\ColorMathLib.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\bin\Debug\CustomColorPicker.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\bin\Debug\ColorMathLib.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\bin\Debug\CustomColorPicker.pdb
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMapView.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorList.baml
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMap2Pans.baml
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorList.g.cs
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMap2Pans.g.cs
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMapView_MarkupCompile.cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMapView.g.resources
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMapView.Properties.Resources.resources
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMapView.csproj.GenerateResource.Cache
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMapView.dll
+F:\Work\Private\grate\colormath\ColorMath\ColorMap\ColorMapView\obj\Debug\ColorMapView.pdb

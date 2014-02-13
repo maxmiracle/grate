@@ -1,0 +1,9 @@
+F:\Work\Private\grate\winforms\Grate\GrateTest\bin\Debug\GrateTest.dll
+F:\Work\Private\grate\winforms\Grate\GrateTest\bin\Debug\GrateTest.pdb
+F:\Work\Private\grate\winforms\Grate\GrateTest\bin\Debug\Grate.exe
+F:\Work\Private\grate\winforms\Grate\GrateTest\bin\Debug\Grate.pdb
+F:\Work\Private\grate\winforms\Grate\GrateTest\obj\Debug\GrateTest.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\winforms\Grate\GrateTest\obj\Debug\GrateTest.ColorGroupTreeTest.resources
+F:\Work\Private\grate\winforms\Grate\GrateTest\obj\Debug\GrateTest.csproj.GenerateResource.Cache
+F:\Work\Private\grate\winforms\Grate\GrateTest\obj\Debug\GrateTest.dll
+F:\Work\Private\grate\winforms\Grate\GrateTest\obj\Debug\GrateTest.pdb

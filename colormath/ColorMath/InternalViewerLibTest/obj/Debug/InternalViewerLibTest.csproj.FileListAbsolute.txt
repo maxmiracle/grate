@@ -1,0 +1,15 @@
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\InternalViewerLibTest.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\MainWindow.baml
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\MainWindow.g.cs
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\App.g.cs
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\InternalViewerLibTest_MarkupCompile.cache
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\InternalViewerLibTest.g.resources
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\InternalViewerLibTest.Properties.Resources.resources
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\InternalViewerLibTest.csproj.GenerateResource.Cache
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\bin\Debug\InternalViewerLibTest.exe.config
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\bin\Debug\InternalViewerLibTest.exe
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\bin\Debug\InternalViewerLibTest.pdb
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\bin\Debug\InternalViewerLib.dll
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\bin\Debug\InternalViewerLib.pdb
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\InternalViewerLibTest.exe
+F:\Work\Private\grate\colormath\ColorMath\InternalViewerLibTest\obj\Debug\InternalViewerLibTest.pdb

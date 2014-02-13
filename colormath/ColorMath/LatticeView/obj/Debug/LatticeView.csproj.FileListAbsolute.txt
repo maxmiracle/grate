@@ -1,0 +1,9 @@
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\bin\Debug\LatticeView.dll
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\bin\Debug\LatticeView.pdb
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\obj\Debug\LatticeView.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\obj\Debug\LatticeView.baml
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\obj\Debug\LatticeView.g.cs
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\obj\Debug\LatticeView_MarkupCompile.cache
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\obj\Debug\LatticeView.g.resources
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\obj\Debug\LatticeView.dll
+F:\Work\Private\grate\colormath\ColorMath\LatticeView\obj\Debug\LatticeView.pdb

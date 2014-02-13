@@ -1,0 +1,12 @@
+F:\Work\Private\grate\winforms\Grate\Grate\bin\Debug\Grate.exe
+F:\Work\Private\grate\winforms\Grate\Grate\bin\Debug\Grate.pdb
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.ColorDispersion.Resource.resources
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.ImagePreview.resources
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.ImageView.resources
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.ImageViewForm.resources
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.Neuro.NModelForm.resources
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.Properties.Resources.resources
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.csproj.GenerateResource.Cache
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.exe
+F:\Work\Private\grate\winforms\Grate\Grate\obj\Debug\Grate.pdb

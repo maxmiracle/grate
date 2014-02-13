@@ -1,0 +1,9 @@
+﻿<Window x:Class="TestColorMapView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="590" Width="672" xmlns:my="clr-namespace:ColorMapView;assembly=ColorMapView" xmlns:my1="clr-namespace:DropDownCustomColorPicker;assembly=CustomColorPicker">
+    <Grid>
+        <my:ColorMap2Pans HorizontalAlignment="Left" Margin="88,12,0,0" Name="colorMap2Pans" VerticalAlignment="Top" Height="512" Width="256" />
+        <my:ColorList HorizontalAlignment="Left" Margin="432,12,0,0" Name="myColorList" VerticalAlignment="Top" Height="512" Width="130" />
+    </Grid>
+</Window>

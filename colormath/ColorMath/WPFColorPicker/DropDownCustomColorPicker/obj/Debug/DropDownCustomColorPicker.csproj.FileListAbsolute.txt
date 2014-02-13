@@ -1,0 +1,15 @@
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.dll
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.pdb
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csprojResolveAssemblyReference.cache
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.cs
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.g.cs
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.cache
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.lref
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.baml
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.baml
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.resources
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.Properties.Resources.resources
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csproj.GenerateResource.Cache
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.dll
+F:\Work\Private\grate\colormath\ColorMath\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.pdb

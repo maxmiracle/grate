@@ -1,0 +1,144 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMathLib", "ColorMathLib\ColorMathLib.csproj", "{AA5D38E8-2553-44E3-864B-03EB280EC972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMathManager", "ColorMathManager\ColorMathManager.csproj", "{473C3977-D6E4-4646-814B-4E10B4476956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMathApp", "ColorMathApp\ColorMathApp.csproj", "{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalViewerLib", "InternalViewerLib\InternalViewerLib.csproj", "{A7916F55-0C5F-487C-B809-13F46975D0E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMapView", "ColorMap\ColorMapView\ColorMapView.csproj", "{AAB99146-9BAC-4129-848F-E779D6DA97EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownCustomColorPicker", "WPFColorPicker\DropDownCustomColorPicker\DropDownCustomColorPicker.csproj", "{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMathManager2", "ColorMathManager2\ColorMathManager2.csproj", "{51D114EA-B533-47A9-90A1-19C7CC046A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalViewerLibTest", "InternalViewerLibTest\InternalViewerLibTest.csproj", "{BDC7B376-88FD-4222-9A1C-84FEBE169456}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs06
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ColorMathLib\\ColorMathLib.csproj
+		SccProjectName1 = ColorMathLib
+		SccLocalPath1 = ColorMathLib
+		SccProjectUniqueName2 = ColorMathManager\\ColorMathManager.csproj
+		SccProjectName2 = ColorMathManager
+		SccLocalPath2 = ColorMathManager
+		SccProjectUniqueName3 = ColorMathApp\\ColorMathApp.csproj
+		SccProjectName3 = ColorMathApp
+		SccLocalPath3 = ColorMathApp
+		SccProjectUniqueName4 = InternalViewerLib\\InternalViewerLib.csproj
+		SccProjectName4 = InternalViewerLib
+		SccLocalPath4 = InternalViewerLib
+		SccProjectUniqueName5 = ColorMap\\ColorMapView\\ColorMapView.csproj
+		SccProjectName5 = ColorMap/ColorMapView
+		SccLocalPath5 = ColorMap\\ColorMapView
+		SccProjectUniqueName6 = WPFColorPicker\\DropDownCustomColorPicker\\DropDownCustomColorPicker.csproj
+		SccProjectName6 = WPFColorPicker/DropDownCustomColorPicker
+		SccLocalPath6 = WPFColorPicker\\DropDownCustomColorPicker
+		SccProjectUniqueName7 = ColorMathManager2\\ColorMathManager2.csproj
+		SccProjectName7 = ColorMathManager2
+		SccLocalPath7 = ColorMathManager2
+		SccProjectUniqueName8 = InternalViewerLibTest\\InternalViewerLibTest.csproj
+		SccProjectName8 = InternalViewerLibTest
+		SccLocalPath8 = InternalViewerLibTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AA5D38E8-2553-44E3-864B-03EB280EC972}.Release|x86.ActiveCfg = Release|Any CPU
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Debug|x86.ActiveCfg = Debug|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Debug|x86.Build.0 = Debug|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Release|Any CPU.ActiveCfg = Release|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Release|Mixed Platforms.Build.0 = Release|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Release|x86.ActiveCfg = Release|x86
+		{473C3977-D6E4-4646-814B-4E10B4476956}.Release|x86.Build.0 = Release|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Debug|x86.ActiveCfg = Debug|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Debug|x86.Build.0 = Debug|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Release|Any CPU.ActiveCfg = Release|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Release|Mixed Platforms.Build.0 = Release|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Release|x86.ActiveCfg = Release|x86
+		{07FB50B0-EC62-4CD4-8CDE-8B5979C73021}.Release|x86.Build.0 = Release|x86
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A7916F55-0C5F-487C-B809-13F46975D0E4}.Release|x86.ActiveCfg = Release|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AAB99146-9BAC-4129-848F-E779D6DA97EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}.Release|x86.ActiveCfg = Release|Any CPU
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Debug|x86.ActiveCfg = Debug|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Debug|x86.Build.0 = Debug|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Release|Any CPU.ActiveCfg = Release|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Release|Mixed Platforms.Build.0 = Release|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Release|x86.ActiveCfg = Release|x86
+		{51D114EA-B533-47A9-90A1-19C7CC046A40}.Release|x86.Build.0 = Release|x86
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BDC7B376-88FD-4222-9A1C-84FEBE169456}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
