@@ -1,0 +1,39 @@
+﻿<Window x:Class="Net.View.ShowImageLiquidity"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Net.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>        
+        <Slider x:Name="Scale" Grid.Column="0" Margin="0"  SmallChange="1" Background="Silver" Minimum="1" Maximum="20" TickPlacement="BottomRight" Orientation="Vertical" FlowDirection="RightToLeft"/>
+        <Canvas x:Name="LatticeCanvas" Grid.Column="1" Width="50" Height="50" Background="Beige">
+            <Canvas.Resources>
+                <ToolTip x:Key="RectToolTip">
+                    <Grid Margin="5">
+                        <StackPanel Orientation="Vertical" Margin="3">
+                            <StackPanel Orientation="Horizontal" Margin="2">
+                                <TextBlock Text="S1" Margin="2"></TextBlock>
+                                <TextBlock Text="{Binding Path=S1}" Margin="2"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </ToolTip>
+                <Style TargetType="{x:Type Rectangle}">
+                    <Setter Property="ToolTip" Value="{StaticResource RectToolTip}" />
+                </Style>
+            </Canvas.Resources>
+            <Canvas.LayoutTransform>
+                <ScaleTransform
+            CenterX="0" CenterY="0"
+            ScaleX="{Binding ElementName=Scale,Path=Value}"
+            ScaleY="{Binding ElementName=Scale,Path=Value}"/>
+            </Canvas.LayoutTransform>
+        </Canvas>
+    </Grid>
+</Window>

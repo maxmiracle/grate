@@ -1,0 +1,9 @@
+﻿<Window x:Class="ColorMathApp.ShowImage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ShowImage" Height="300" Width="300">
+    <Grid>
+        <Label Content="Image" Height="28" Margin="5,3,12,0" Name="labelTitle" VerticalAlignment="Top" />
+        <Image Margin="5,27,12,12" Name="image" Stretch="None" />
+    </Grid>
+</Window>

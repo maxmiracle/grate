@@ -1,0 +1,19 @@
+﻿html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #000000;
+}
+
+div.centre
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+canvas.centre
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}

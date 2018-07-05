@@ -1,0 +1,7 @@
+﻿<Window x:Class="InternalViewerLib.InternalViewerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:internalViewerLib="clr-namespace:InternalViewerLib"
+        Title="Internal Viewer" Height="387" Width="587">
+    <internalViewerLib:ObjectViewer x:Name="ObjectViewerControl"/>
+</Window>

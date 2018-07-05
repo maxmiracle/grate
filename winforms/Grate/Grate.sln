@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABAB2E19-64D6-4467-BE63-63921388148E}"
+	ProjectSection(SolutionItems) = preProject
+		Grate.vsmdi = Grate.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grate", "Grate\Grate.csproj", "{4DE12C01-A26F-4E5E-AFAB-D518B82ABF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrateTest", "GrateTest\GrateTest.csproj", "{DA1A9E14-D4DD-440B-82C2-B4A0C3EF1614}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs06.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Grate\\Grate.csproj
+		SccProjectName1 = Grate
+		SccLocalPath1 = Grate
+		SccProjectUniqueName2 = GrateTest\\GrateTest.csproj
+		SccProjectName2 = GrateTest
+		SccLocalPath2 = GrateTest
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Grate.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DE12C01-A26F-4E5E-AFAB-D518B82ABF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE12C01-A26F-4E5E-AFAB-D518B82ABF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE12C01-A26F-4E5E-AFAB-D518B82ABF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE12C01-A26F-4E5E-AFAB-D518B82ABF53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1A9E14-D4DD-440B-82C2-B4A0C3EF1614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1A9E14-D4DD-440B-82C2-B4A0C3EF1614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1A9E14-D4DD-440B-82C2-B4A0C3EF1614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1A9E14-D4DD-440B-82C2-B4A0C3EF1614}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

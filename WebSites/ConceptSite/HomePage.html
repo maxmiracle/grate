@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Maxim Vasiliev personal web site</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ConseptSite.css">
+    <script>
+
+        function draw() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var canvasWidth = window.innerWidth-20;
+            var canvasHeight = window.innerHeight-10;
+            ctx.canvas.width  = canvasWidth;
+            ctx.canvas.height = canvasHeight;
+            ctx.fillStyle = "#b0bbb0";
+            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(canvasWidth, canvasHeight);
+            ctx.stroke();
+        }
+
+        $(document).ready(function () {
+            window.addEventListener("resize", draw);
+            draw();
+        });
+    </script>   
+</head>
+<body>
+    <canvas class="centre" id="myCanvas">errror</canvas>
+</body>
+</html>

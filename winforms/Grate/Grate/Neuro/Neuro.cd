@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Grate.Neuro.ColorWeight">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="color" Hidden="true" />
+      <Field Name="weight" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="Grate.Neuro.ColorWeight.ColorWeightSum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Neuro\ColorWeight.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAQAAAAAAAACAAAACgAAAAgAAAAAA=</HashCode>
+      <FileName>Neuro\ColorWeight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Grate.Neuro.NReductor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAACAAAACAAAAAgAAA=</HashCode>
+      <FileName>Neuro\NReductor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Grate.Neuro.NSelector" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAwAAAAEA=</HashCode>
+      <FileName>Neuro\NSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Grate.Neuro.IReductorInput">
+    <Position X="0.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAACACAAAAAAAAAAAA=</HashCode>
+      <FileName>Neuro\IReductorInput.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Grate.Neuro.IReductorTransmit">
+    <Position X="0.5" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Neuro\IReductorTransmit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

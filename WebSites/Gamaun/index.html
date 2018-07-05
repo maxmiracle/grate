@@ -1,0 +1,94 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gamayun Massimo site">
+    <meta name="author" content="Massimo">
+    <link rel="shortcut icon" href="Content/favicon.ico">
+
+    <title>Gamayun Disign</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="Content/cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Gamayun Design</h3>
+                        <ul id="myTabs" class="nav masthead-nav" role="tablist">
+                            <li class="active" role="presentation">
+                                <a id="home-tab" href="#home" role="tab" aria-controls="home" data-toggle="home">Home</a>
+                            </li>
+                            <li  role="presentation">
+                                <a href="#contact" id="contact-tab" aria-controls="contact" role="tab" data-toggle="contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <h1 class="cover-heading">Gamayun Bird</h1>
+                            <p class="lead">Gamayun Bird is looking for something...</p>
+                            <p class="lead">
+                                <a id="predict" href="#" class="btn btn-lg btn-default">Next prediction</a>
+                            </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="contact" aria-labelledby="contact-tab">
+                            webmaster: massimobasil@yandex.ru
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Gamayun bird, by <a href="massimobasil@yandex.ru">massimobasil@yandex.ru</a>.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#predict").on('click', function () {
+                alert("Opps!");
+            });
+        });
+        $('#myTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+</body>
+</html>
