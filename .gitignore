@@ -3,3 +3,11 @@
 ################################################################################
 
 /colornet/NetModel4/NetModel4/obj
+/colornet/NetModel4/.vs/NetModel4/DesignTimeBuild
+/colornet/NetModel3/.vs/NetModel3/DesignTimeBuild
+/colornet/NetModel3/.vs/NetModel3/v15/Server/sqlite3
+*.suo
+/colornet/NetModel3/Net/obj/Debug
+/colornet/NetModel4/.vs/NetModel4/v15/Server/sqlite3
+/colornet/NetModel3/Net/bin/Debug
+/WebSites/Gamaun/.vs
