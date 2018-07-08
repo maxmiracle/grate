@@ -28,10 +28,15 @@
 
 <body onload="">
     <div class="site-wrapper">
+        <canvas id="bgCanvas" class="backgr-canvas"></canvas>
 
         <div class="site-wrapper-inner">
-            <canvas id="bgCanvas"></canvas>
+
+
+
             <div class="cover-container">
+
+
 
                 <div class="masthead clearfix">
                     <div class="inner">
@@ -50,7 +55,7 @@
                 <div class="inner cover">
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="home">
-                            <h1 class="cover-heading">Летопись</h1>
+                            <h1 class="cover-heading">Летопись</h1><a>akdjfalkj</a>
                             <p class="lead"></p>
                             <p class="lead">
                                 <a id="predict" href="#" class="btn btn-lg btn-default">Предыдущее событие</a>
@@ -91,7 +96,7 @@
          */
 
         var start_width = 20;           // starting width of each branch
-        var frame_time = 30;            // milliseconds per frame
+        var frame_time = 100;            // milliseconds per frame
         var straighten_factor = 0.95;   // value from 0 to 1, factor applied to direction_offset every frame
         var curviness = 0.2;            // amount of random direction change each frame
 
@@ -99,8 +104,8 @@
         var branch_shrink = 0.95;   // factor by which branches shrink every frame
         var min_width = 1;          // minimum width for branch, after which they are discontinued
         var branch_opacity = 0.4;   // opacity of lines drawn
-        var width = 600;            // width and height of canvas
-        var height = 600;
+        var width = 1600;            // width and height of canvas
+        var height = 1600;
         var branch_count = 3;       // branch count per tree
         var branch_bud_size = 0.5;  // ratio of original branch size at which branch will split
         var branch_bud_angle = 1;   // angle offset for split branch;
@@ -121,6 +126,9 @@
             cycle: true,            // gradually change colors each frame
             new_branch_frames: 20    // number of frames elapsed between each auto-generated tree
         };
+
+        var imgLeaf = new Image();
+        imgLeaf.src = "imgs/imgLeaf50small.png";
 
         // handle moust click.  start new tree at mouse position
         function paper_click(event) {
@@ -170,14 +178,19 @@
         function branch_update(branches, branch, paper) {
             paper.beginPath();
             paper.lineWidth = branch.width;
-            paper.moveTo(branch.x, branch.y);
+            var xP = branch.x;
+            var yP = branch.y;
+            paper.moveTo(xP, yP);
 
             branch.width *= branch_shrink;
             branch.direction += direction_offset;
-            branch.x += Math.cos(branch.direction) * branch.width;
-            branch.y += Math.sin(branch.direction) * branch.width;
+             
+            var xN = xP + Math.cos(branch.direction) * branch.width;
+            var yN = yP + Math.sin(branch.direction) * branch.width;
 
-            paper.lineTo(branch.x, branch.y);
+            branch.x = xN;
+            branch.y = yN;
+            paper.lineTo(xN, yN);
             paper.stroke();
 
             if (prefs.wrap) wrap_branch(branch, width, height);
@@ -185,14 +198,37 @@
             if (branch.width < branch.original_width * branch_bud_size) {
                 branch.original_width *= branch_bud_size;
                 branch_add(branches, new Branch(branch, branch.direction + 1, branch.original_width));
+                //drawLeaf(paper, xP, yP, xN, yN);
+
+                drawLeaf(paper, 100, 100, 100, 200);
+                paper.moveTo(0, 100);
+                paper.lineTo(1000, 100);
+                paper.stroke();
+                paper.moveTo(100, 0);
+                paper.lineTo(100, 1000);
+                paper.stroke();
             }
+
+            
+        }
+
+        function drawLeaf(ctx, x0, y0, x1, y1)
+        {
+            var vectorAngle = Math.atan((x1 - x0) / (y1 - y0));
+            var angleInRadians = vectorAngle + Math.PI/180*135;
+            ctx.translate(x0, y0);
+            ctx.rotate(angleInRadians);
+            var d = 50;
+            ctx.drawImage(imgLeaf, -d / 2 - d / 2 * Math.sin(vectorAngle), -d / 2 - d / 2 * Math.cos(vectorAngle), d, d);
+            ctx.rotate(-angleInRadians);
+            ctx.translate(-x0, -y0);
         }
 
         function draw_frame() {
             var starttime = new Date();
 
             if (prefs.fade) {
-                paper.fillRect(0, 0, width, height);
+                paper.clearRect(0, 0, width, height);
             }
 
             if (prefs.cycle) {
@@ -271,12 +307,21 @@
             canvas.height = height;
 
             paper = canvas.getContext("2d");
-            paper.fillStyle = "rgb(0, 0, 0)";
-            paper.fillRect(0, 0, width, height);
+            //paper.fillStyle = "rgb(0, 0, 0, 0)";
+            paper.clearRect(0, 0, width, height);
             paper.fillStyle = "rgba(0, 0, 0, 0.005)";
 
             paper.strokeStyle = "rgba(128, 128, 64, " + String(branch_opacity) + ")";
             document.getElementById("bgCanvas").onclick = paper_click;
+        }
+
+        // Runs each time the DOM window resize event fires.
+        // Resets the canvas dimensions to match window,
+        // then draws the new borders accordingly.
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            setup_canvas();
         }
 
         // called before any frames are drawn.  initializes stuff.
@@ -287,6 +332,11 @@
             //for (var i = 0; i < checkboxes.length; ++i) {
             //    wireup_checkbox(prefs, checkboxes[i], checkboxes[i] + "check");
             //}
+
+            // each time the window is resized.
+            window.addEventListener('resize', resizeCanvas, false);
+            // Draw canvas border for the first time.
+            resizeCanvas();
 
             setup_canvas();
 
