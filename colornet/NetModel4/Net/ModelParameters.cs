@@ -10,7 +10,7 @@ namespace Net
     /// Концепция четвертой версии. 
     /// Ключевое слово этой версии - композиция.
     /// Еще в третьей версии я пришел к выводу, что на выходе должна быть композиция. 
-    /// Я пришел к выводу, что критерии должны подбираться с учетом результата. То есть должна быть не детерминированная связь с выходом.
+    /// Критерии должны подбираться с учетом результата. То есть должна быть не детерминированная связь с выходом.
     /// Это должен быть интерактивный процесс определения объекта. Количество объектов должно быть не более MaxObjects.
     /// Если же количество объектов больше, то нужно выделить самые яркие из них. 
     /// Если объекты равнозначны по критериям, то нужно выбрать максимальное количество и сузить область рассмотрения. Или другими словами, 
@@ -40,5 +40,18 @@ namespace Net
         /// By default the value of MaxObjects is chosen as 7 according to psycology.
         /// </summary>
         public uint MaxObjects = 7;
+
+        /// <summary>
+        /// Criteria - a set of criterion(Measure,Assess)
+        /// </summary>
+        public IEnumerable<Criterion<Model, Composition>> Criteria = new Criterion<Model, Composition>[] {
+              // Criterion 1
+              new Criterion<Model, Composition>
+              {
+                  Measure = CompositionFullnessMeasurement.compositionFullnessMeasurement,
+                  Assessment = new ThresholdAssessment(){Threshold = 90 }.Assess
+              }
+        };
+
     }
 }

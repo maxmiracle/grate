@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,12 +48,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompositionFullnessMeasurement.cs" />
+    <Compile Include="Criterion.cs" />
+    <Compile Include="CanvasArea.cs" />
+    <Compile Include="CanvasCollection.cs" />
+    <Compile Include="Composition.cs" />
+    <Compile Include="CompositionPart.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="ModelParameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\CompositionTest.cs" />
     <Compile Include="Test\ModelParametersTest.cs" />
+    <Compile Include="Test\ModelTest.cs" />
+    <Compile Include="Test\TestImages.cs" />
+    <Compile Include="ThresholdAssessment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestData\G0.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
