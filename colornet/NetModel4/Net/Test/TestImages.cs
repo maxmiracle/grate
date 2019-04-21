@@ -1,19 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using NUnit.Framework.Interfaces;
 
 namespace Net.Test
 {
     internal class TestImages
     {
-        
-        const string v1 = @"C:\grate\colornet\NetModel4\Net\TestData\G0.bmp";
-        static readonly string[] testImages = { v1 };
+        /// <summary>
+        /// Относительный путь в проекте к тестовому изображению malevich10.
+        /// Черный квадрат. Изображение 10x10 1 bit. Белый фон
+        /// Композиция: черный квадрат Малевича.
+        /// Типовая задача: разделить области на две.
+        /// Научиться работать с битовыми изображениями.
+        /// </summary>
+        const string malevich10 = @".\TestData\G0.bmp";
 
-        internal static Image getTestImage(int v)
+        static readonly Dictionary<string, string> testImages = new Dictionary<string, string>
+        {
+            { nameof(malevich10), malevich10 }
+        };
+
+      
+        public static Image getTestImage(string key)
         {
             
-            return Image.FromFile(testImages[v]);
+            return Image.FromFile(testImages[key]);
         }
     }
 }

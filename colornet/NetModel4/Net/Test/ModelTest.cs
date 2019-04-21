@@ -22,13 +22,12 @@ namespace Net.Test
             // Создаем модель
             var model = new Model(new ModelParameters());
             // Загружаем тестовое изображение.
-            Image testImage = TestImages.getTestImage(0);
-            // Получаем результат работы модели - композицию
+            Image testImage = TestImages.getTestImage("malevich10");
+            // Получаем результат работы модели - композицию.
             var composition = model.ProcessImage(testImage);
-            // 
-
+            // Оцениваем полученную модель
             var assess1 = model.Assess(composition);
-            Assert.IsTrue(assess1, "Assessment should be true - OK");
+            Assert.IsTrue(assess1, "Assessment should be true");
         }
     }
 }
