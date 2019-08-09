@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net", "Net\Net.csproj", "{F70CA2EA-C04A-4F46-A95B-91C480FC4480}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergentImage", "EmergentImage\EmergentImage.csproj", "{DEDE1FA7-8741-4984-9132-BAD4432A7AB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F70CA2EA-C04A-4F46-A95B-91C480FC4480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70CA2EA-C04A-4F46-A95B-91C480FC4480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70CA2EA-C04A-4F46-A95B-91C480FC4480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDE1FA7-8741-4984-9132-BAD4432A7AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDE1FA7-8741-4984-9132-BAD4432A7AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDE1FA7-8741-4984-9132-BAD4432A7AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDE1FA7-8741-4984-9132-BAD4432A7AB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

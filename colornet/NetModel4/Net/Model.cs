@@ -42,12 +42,16 @@ namespace Net
 
         /// <summary>
         /// Функция описывает элементарный цикл обучения, который состоит из опыта, получения оценки(обратной связи), коррекции
+        /// Input:Image, Function:ProcessImage, Result:Composition, KnownTarget:Composition, Learn 
         /// </summary>
-        public void TryAndLearn(Image image)
+        public void TryAndLearn(Image image, Composition rightResult)
         {
+            // Опыт
             Composition comosition =  ProcessImage(image);
-
-            
+            // Разница
+            var diff = new { comosition, rightResult };
+            // Обучение
+            //Learn(image, diff);
         }
     }
 }
