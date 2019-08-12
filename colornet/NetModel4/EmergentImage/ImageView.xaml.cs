@@ -25,8 +25,6 @@ namespace EmergentImage
             InitializeComponent();
         }
 
-        private SqImgLayer layer;
-
         private static double GridViewScaleValue = 3;
 
         private bool IsGridView { get; set; }
@@ -41,7 +39,7 @@ namespace EmergentImage
 
         public ImageView(SqImgLayer layer) : this()
         {
-            this.layer = layer;
+            ImgLayer = layer;
             UpdateWorkingArea();
         }
 
@@ -50,10 +48,29 @@ namespace EmergentImage
             //UpdateWorkingArea();
         }
 
-        private void UpdateWorkingArea()
+        public SqImgLayer ImgLayer
         {
-            var LatticeHeight = layer.Height;
-            var LatticeWidth = layer.Width;
+            get { return (SqImgLayer)GetValue(ImgLayerProperty); }
+            set
+            {
+                SetValue(ImgLayerProperty, value);
+            }
+        }
+
+        public static readonly DependencyProperty ImgLayerProperty =
+            DependencyProperty.Register("ImgLayer", typeof(SqImgLayer), typeof(ImageView), new PropertyMetadata(null, (o, args) => UpdateImgLayerLayout(o, args) ));
+
+        private static void UpdateImgLayerLayout(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs args)
+        {
+            ((ImageView)dependencyObject).UpdateWorkingArea((SqImgLayer)(args.NewValue));
+        }
+
+        private void UpdateWorkingArea(SqImgLayer imgLayer = null)
+        {
+            if (imgLayer == null) imgLayer = ImgLayer;
+
+            var LatticeHeight = imgLayer.Height;
+            var LatticeWidth = imgLayer.Width;
             double scale = 2;
             LatticeCanvas.Width = LatticeWidth * scale;
             LatticeCanvas.Height = LatticeHeight * scale;
@@ -62,7 +79,7 @@ namespace EmergentImage
             LatticeCanvas.Children.Clear();
 
             // Show color of reactor
-            foreach (SqRt sqRt in layer)
+            foreach (SqRt sqRt in ImgLayer)
             {
 
 
@@ -85,18 +102,18 @@ namespace EmergentImage
                 //{
 
                 //    // Show nearest by Color
-                if (sqRt.LiquidityDirection != null)
-                {
-                    XY xyDir = sqRt.LiquidityDirection;
+                //if (sqRt.LiquidityDirection != null)
+                //{
+                //    XY xyDir = sqRt.LiquidityDirection;
 
-                    var scaleOneSecond = scale / 2;
-                    var x1 = sqRt.X * scale + scaleOneSecond;
-                    var y1 = sqRt.Y * scale + scaleOneSecond;
-                    var x2 = (sqRt.X + (xyDir.X) * 0.5) * scale + scaleOneSecond;
-                    var y2 = (sqRt.Y + (xyDir.Y) * 0.5) * scale + scaleOneSecond;
-                    var newLine = new Line() { X1 = x1, Y1 = y1, X2 = x2, Y2 = y2, Stroke = ColorRelationBrush, StrokeThickness = ColorRelationStrokeThikness };
-                    LatticeCanvas.Children.Add(newLine);
-                }
+                //    var scaleOneSecond = scale / 2;
+                //    var x1 = sqRt.X * scale + scaleOneSecond;
+                //    var y1 = sqRt.Y * scale + scaleOneSecond;
+                //    var x2 = (sqRt.X + (xyDir.X) * 0.5) * scale + scaleOneSecond;
+                //    var y2 = (sqRt.Y + (xyDir.Y) * 0.5) * scale + scaleOneSecond;
+                //    var newLine = new Line() { X1 = x1, Y1 = y1, X2 = x2, Y2 = y2, Stroke = ColorRelationBrush, StrokeThickness = ColorRelationStrokeThikness };
+                //    LatticeCanvas.Children.Add(newLine);
+                //}
 
                 //}
             }
@@ -223,19 +240,6 @@ namespace EmergentImage
             //rect.StrokeThickness = 0.3;
             SqRt sqRt = rect.Tag as SqRt;
             // Fire select this reactor
-        }
-
-        public SqImgLayer Layer
-        {
-            get
-            {
-                return layer;
-            }
-            set
-            {
-                layer = value;
-                UpdateWorkingArea();
-            }
         }
 
         private void ShowClusters(object sender, RoutedEventArgs e)

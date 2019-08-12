@@ -7,13 +7,16 @@
         mc:Ignorable="d"
         Title="Emergent Image" Height="450" Width="800">
     <DockPanel>
+        <DockPanel.CommandBindings>
+            <CommandBinding Command="ApplicationCommands.Open" CanExecute="CanOpen" Executed="Open"/>
+        </DockPanel.CommandBindings>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
-                <MenuItem Header="_Open" />
-                <MenuItem Header="_Exit" />
+                <MenuItem Header="_Open" Command="ApplicationCommands.Open"/>
+                <MenuItem Header="E_xit" Command="ApplicationCommands.Close"/>
             </MenuItem>
             <MenuItem Header="_Tools">
-                <MenuItem Header="Analyse _colors"/>
+                <MenuItem Header="Analyse _colors" Command="local:EmergentCommands.AnalyseColors" />
             </MenuItem>
         </Menu>
         <TabControl DockPanel.Dock="Right" Width="100">
@@ -22,7 +25,7 @@
             </TabItem>
         </TabControl>
         <Grid>
-            <local:ImageView></local:ImageView>
+            <local:ImageView ImgLayer="{Binding ImgLayer}"></local:ImageView>
         </Grid>
 
     </DockPanel>

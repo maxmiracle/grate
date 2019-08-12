@@ -19,9 +19,25 @@ namespace EmergentImage
     /// </summary>
     public partial class MainWindow : Window
     {
+        EmergentImageContext context;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            EmergentImageContext context = new EmergentImageContext();
+            this.DataContext = context;
+            this.context = context;
+        }
+
+        public void Open(object sender, ExecutedRoutedEventArgs e)
+        {
+            context.Open(sender, e);
+        }
+
+        public void CanOpen(object sender, CanExecuteRoutedEventArgs e)
+        {
+            context.CanOpen(sender, e);
         }
     }
 }
