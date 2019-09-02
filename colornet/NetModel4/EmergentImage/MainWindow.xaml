@@ -25,8 +25,7 @@
             </TabItem>
         </TabControl>
         <Grid>
-            <local:ImageView ImgLayer="{Binding ImgLayer}"></local:ImageView>
+            <local:ImageView x:Name="ImageView" ImgBitmap="{Binding Bitmap}"></local:ImageView>
         </Grid>
-
     </DockPanel>
 </Window>

@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using EmergentImage.Annotations;
 
 namespace EmergentImage
@@ -15,6 +16,7 @@ namespace EmergentImage
     public class EmergentImageContext : INotifyPropertyChanged
     {
         private SqImgLayer _imgLayer;
+        private BitmapImage _bitmap;
         bool IsCanOpen { get; set; } = true;
 
         public void Open(object sender, ExecutedRoutedEventArgs e)
@@ -38,13 +40,25 @@ namespace EmergentImage
                     // Open document
                     string filename = dlg.FileName;
 
-                    Bitmap bitmap = new Bitmap(filename);
-                    ImgLayer = new SqImgLayer(bitmap);
+                    Bitmap = new BitmapImage(new Uri(filename));
+                    
+                    //ImgLayer = new SqImgLayer(bitmap);
                 }
             }
             finally
             {
                 IsCanOpen = true;
+            }
+        }
+
+        public BitmapImage Bitmap
+        {
+            get => _bitmap;
+            set
+            {
+                if (Equals(value, _bitmap)) return;
+                _bitmap = value;
+                OnPropertyChanged();
             }
         }
 

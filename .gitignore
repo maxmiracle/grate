@@ -31,3 +31,6 @@
 /colornet/NetModel4/EmergentImage/obj/Release
 /colornet/NetModel4/Net/bin/Release
 /colornet/NetModel4/Net/obj/Release
+/colornet/NetModel4/.vs/NetModel4/v16/Server/sqlite3
+/colormath/ColorMath/ColorMap/ColorMapView/obj/Release
+/colormath/ColorMath/ColorMap/TestColorMapView/obj/x86/Release/TestColorMapView.csprojAssemblyReference.cache
