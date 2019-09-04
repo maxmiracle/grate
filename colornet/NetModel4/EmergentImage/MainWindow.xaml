@@ -9,6 +9,7 @@
     <DockPanel>
         <DockPanel.CommandBindings>
             <CommandBinding Command="ApplicationCommands.Open" CanExecute="CanOpen" Executed="Open"/>
+            <CommandBinding Command="local:EmergentCommands.AnalyseColors" CanExecute="CanAnalyseColors" Executed="AnalyseColors"/>
         </DockPanel.CommandBindings>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">

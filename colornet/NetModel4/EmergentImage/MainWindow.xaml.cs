@@ -39,5 +39,15 @@ namespace EmergentImage
         {
             context.CanOpen(sender, e);
         }
+
+        public void AnalyseColors(object sender, ExecutedRoutedEventArgs e)
+        {
+            context.AnalyseColors(sender, e);
+        }
+
+        public void CanAnalyseColors(object sender, CanExecuteRoutedEventArgs e)
+        {
+            context.CanAnalyseColors(sender, e);
+        }
     }
 }

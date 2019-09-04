@@ -19,6 +19,11 @@ namespace EmergentImage
         private BitmapImage _bitmap;
         bool IsCanOpen { get; set; } = true;
 
+        /// <summary>
+        /// Command Open
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Open(object sender, ExecutedRoutedEventArgs e)
         {
             IsCanOpen = false;
@@ -51,6 +56,29 @@ namespace EmergentImage
             }
         }
 
+        public void CanOpen(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = IsCanOpen;
+            e.Handled = true;
+
+        }
+
+        /// <summary>
+        /// Command AnalyseColors
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
+        public void AnalyseColors(object sender, ExecutedRoutedEventArgs args)
+        {
+
+        }
+
+        public void CanAnalyseColors(object sender, CanExecuteRoutedEventArgs eventArgs)
+        {
+            eventArgs.CanExecute = Bitmap != null;
+            eventArgs.Handled = true;
+        }
+
         public BitmapImage Bitmap
         {
             get => _bitmap;
@@ -71,13 +99,6 @@ namespace EmergentImage
                 _imgLayer = value;
                 OnPropertyChanged();
             }
-        }
-
-
-        public void CanOpen(object sender, CanExecuteRoutedEventArgs e)
-        {
-            e.CanExecute = IsCanOpen;
-            e.Handled = true;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
