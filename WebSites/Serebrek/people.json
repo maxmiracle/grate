@@ -1,0 +1,65 @@
+﻿{
+  "name": "Серебряный век",
+  "img": "silver.png",
+  "children": [
+    {
+      "name": "poets",
+      "children": [
+        {
+          "name": "Мережковский",
+          "img": "Merezhkovsky.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Гиппиус",
+          "img": "Gippius_1910s.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Сологуб",
+          "img": "Sologub2.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Соловьёв",
+          "img": "V_Solovyov.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Валерий Брюсов",
+          "img": "Valery_Bryusov_c_1900.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Минский",
+          "img": "Minsky.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Бальмонт",
+          "img": "Balmont_1880s.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Андрей Белый",
+          "img": "Andrei_Bely.jpg",
+          "link": "",
+          "size": 40000
+        },
+        {
+          "name": "Александр Блок",
+          "img": "blok_23.jpg",
+          "link": "",
+          "size": 40000
+        }
+      ]
+    }
+  ]
+}
