@@ -6,54 +6,78 @@
       "name": "poets",
       "children": [
         {
+          "id": 1,
+          "classid": "poet",
           "name": "Мережковский",
           "img": "Merezhkovsky.jpg",
-          "link": "",
+          "links":[
+            {
+              "id": 1001,
+              "link_type" : "friend",
+              "link_to_id" : 6
+            }
+          ],
           "size": 40000
         },
         {
+          "id": 2,
+          "classid": "poet",
           "name": "Гиппиус",
           "img": "Gippius_1910s.jpg",
           "link": "",
           "size": 40000
         },
         {
+          "id": 3,
+          "classid": "poet",
           "name": "Сологуб",
           "img": "Sologub2.jpg",
           "link": "",
           "size": 40000
         },
         {
+          "id": 4,
+          "classid": "poet",
           "name": "Соловьёв",
           "img": "V_Solovyov.jpg",
           "link": "",
           "size": 40000
         },
         {
+          "id": 5,
+          "classid": "poet",
           "name": "Валерий Брюсов",
           "img": "Valery_Bryusov_c_1900.jpg",
           "link": "",
           "size": 40000
         },
         {
+          "id": 6,
+          "classid": "poet",
           "name": "Минский",
           "img": "Minsky.jpg",
           "link": "",
           "size": 40000
         },
         {
+          "id": 7,
+          "classid": "poet",
           "name": "Бальмонт",
           "img": "Balmont_1880s.jpg",
           "link": "",
           "size": 40000
         },
         {
+          "id": 8,
+          "classid": "poet",
           "name": "Андрей Белый",
           "img": "Andrei_Bely.jpg",
           "link": "",
           "size": 40000
         },
         {
+          "id": 9,
+          "classid": "poet",
           "name": "Александр Блок",
           "img": "blok_23.jpg",
           "link": "",
