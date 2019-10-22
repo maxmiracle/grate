@@ -9,8 +9,10 @@
     <link href="Content/favicon.ico" rel="shortcut icon">
 
     <title>serebrek.ru - Серебряный век</title>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-timer.v1.min.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Custom styles for this template -->
     <link href="Content/cover.css" rel="stylesheet">
 
@@ -41,6 +43,15 @@
     var vis;
     var force = d3.layout.force();
 
+    // Nodes that are not viewing now.
+    var freeNodes = [];
+
+    var viewNodes = [];
+
+    var links = [];
+    // Nodes number to view
+    var nodeNumberToView = 5;
+
     vis = d3.select("#vis").append("svg").attr("width", "99%").attr("height", "99%");
 
     d3.json("people.json", function (json) {
@@ -59,21 +70,44 @@
         defs.enter().append("svg:path")
             .attr("d", "M0,0L10,10");
 
-        update();
+        updateinit();
     });
 
+    // Add remove nodes
+    d3.interval(function(elapsed){
+            force.nodes().push(freeNodes.pop())
+            freeNodes.unshift(force.nodes().shift());
+            update();
+        },
+        3000);
+
+
+
+
+    function updateinit() {
+        freeNodes = flatten(root);
+
+        // Initialize viewing nodes
+        for(var i=0; i<nodeNumberToView; i++)
+        {
+            viewNodes.push(freeNodes.pop());
+        }
+
+        links = d3.layout.tree().links(viewNodes);
+
+        update();
+    }
 
     /**
      *
      */
     function update() {
-        var nodes = flatten(root),
-            links = d3.layout.tree().links(nodes);
+
 
         // Restart the force layout.
-        force.nodes(nodes)
+        force.nodes(viewNodes)
             .links(links)
-            .gravity(0.05)
+            .gravity(0.07)
             .charge(-1500)
             .linkDistance(200)
             .friction(0.5)
@@ -101,7 +135,7 @@
 
         // Update the nodes…
         var node = vis.selectAll("g.node")
-            .data(nodes, function (d) {
+            .data(viewNodes, function (d) {
                 return d.id;
             });
 
@@ -249,7 +283,11 @@
                 node.children.forEach(recurse);
             if (!node.id)
                 node.id = ++i;
-            nodes.push(node);
+            if (node.classid) {
+                if (node.classid == "poet") {
+                    nodes.push(node);
+                }
+            }
         }
 
         recurse(root);
@@ -259,4 +297,4 @@
 
 </script>
 </body>
-</html>
+</html> 
