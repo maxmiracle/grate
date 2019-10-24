@@ -21,9 +21,10 @@ a:hover {
 
 @font-face {
     font-family: "MyGlyph";
-    src: url("http://serebrek.ru/fonts/glyphicons-halflings-regular.eot");
-    src: url("http://serebrek.ru/fonts/glyphicons-halflings-regular.woff") format("woff"), url("http://serebrek.ru/css/fonts/glyphicons-halflings-regular.otf") format("opentype"), 
-        url("http://serebrek.ru/fonts/glyphicons-halflings-regular.svg#filename") format("svg");
+    src: url("../fonts/glyphicons-halflings-regular.eot");
+    src: url("../fonts/glyphicons-halflings-regular.woff") format("woff"), 
+         url("../fonts/glyphicons-halflings-regular.otf") format("opentype"), 
+         url("../fonts/glyphicons-halflings-regular.svg#filename") format("svg");
 }
 
 

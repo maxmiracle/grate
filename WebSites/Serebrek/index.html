@@ -9,9 +9,12 @@
     <link href="Content/favicon.ico" rel="shortcut icon">
 
     <title>serebrek.ru - Серебряный век</title>
-    <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <!-- <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3-timer.v1.min.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="libs/d3.v3.js" charset="utf-8"></script>
+    <script src="libs/d3-timer.v1.min.js" charset="utf-8"></script>
+    <script src="libs/jquery.3.4.1.min.js"></script>    
 
     <!-- Custom styles for this template -->
     <link href="Content/cover.css" rel="stylesheet">
@@ -39,6 +42,10 @@
         x_browser = 20,
         y_browser = 25,
         root;
+
+   //var tr1 = d3.transition()
+            //.duration(1000)
+            //.ease(d3.ease.easeLinear);
 
     var vis;
     var force = d3.layout.force();
@@ -143,12 +150,14 @@
         var nodeEnter = node.enter().append("svg:g")
             .attr("class", "node")
             .attr("transform", function (d) {
-                return "translate(" + d.x - 38 + "," + d.y - 50 + ")";
+                var dtx = d.x - 38;
+                var dty = d.y - 50;
+                return "translate(" + dtx + "," + dty + ")";
             })
             .on("click", click)
             .call(force.drag);
 
-        // Append a circle
+        // Append a rectangle
         nodeEnter.append("svg:rect")
             .attr("width", function (d) {
                 return 76;
@@ -162,7 +171,7 @@
             .attr("y", function (d) {
                 return -50;
             })
-            .style("fill", "#4d555e");
+            .style("fill", "#00000000");
 
 
         // Append images
@@ -189,9 +198,11 @@
             })
 
             .on('mouseenter', function () {
+
+               
                 // select element in current context
                 d3.select(this)
-                    .transition()
+                    .transition().duration(1000)
                     .attr("x", function (d) {
                         return -50;
                     })
@@ -228,6 +239,7 @@
 
         // Exit any old nodes.
         node.exit().remove();
+        //node.exit().transition(tr1).style("opacity", "0").remove();
 
 
         // Re-select for update.
@@ -297,4 +309,4 @@
 
 </script>
 </body>
-</html> 
+</html>
