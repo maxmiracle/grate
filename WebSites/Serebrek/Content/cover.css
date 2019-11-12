@@ -27,6 +27,10 @@ a:hover {
          url("../fonts/glyphicons-halflings-regular.svg#filename") format("svg");
 }
 
+.links line {
+  stroke: #aaa;
+}
+
 
 /*
  * Base structure

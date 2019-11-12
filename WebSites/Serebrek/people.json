@@ -1,10 +1,5 @@
 ﻿{
-  "name": "Серебряный век",
-  "img": "silver.png",
-  "children": [
-    {
-      "name": "poets",
-      "children": [
+   "nodes": [
         {
           "id": 1,
           "classid": "poet",
@@ -83,7 +78,9 @@
           "link": "",
           "size": 40000
         }
-      ]
-    }
+     ],
+  "links" :
+  [
+
   ]
 }
