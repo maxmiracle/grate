@@ -9,9 +9,28 @@
     <link href="Content/favicon.ico" rel="shortcut icon">
 
     <title>serebrek.ru - Серебряный век</title>
-    <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
-    <script src="https://d3js.org/d3-timer.v1.min.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script> -->
+    <!-- <script type = "text/javascript" src = "https://d3js.org/d3.v4.js"></script> -->
+    <!-- <script src="https://d3js.org/d3-timer.v1.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="libs/d3/d3.js" charset="utf-8"></script> -->
+    <!-- <script src="libs/d3.v3.js" charset="utf-8"></script>
+    <script src="libs/d3-timer.v1.min.js" charset="utf-8"></script>
+    <script src="libs/d3-transition.js" charset="utf-8"></script> -->
+    <script src="libs/jquery.3.4.1.min.js"></script>
+    <script src="libs/node_modules/d3/dist/d3.js"></script>
+    <!-- <script src="libs/node_modules/d3-force/dist/d3-force.min.js"></script>
+    <script src="libs/node_modules/d3-selection/dist/d3-selection.min.js"></script> -->
+    <!-- <script src="libs/node_modules/d3-dispatch/dist/d3-dispatch.min.js"></script>
+    <script src="libs/node_modules/d3-timer/dist/d3-timer.min.js"></script>
+    <script src="libs/node_modules/d3-quadtree/dist/d3-quadtree.min.js"></script>
+    <script src="libs/node_modules/d3-force/dist/d3-force.min.js"></script>
+    <script src="libs/node_modules/d3-color/dist/d3-color.min.js"></script>
+    <script src="libs/node_modules/d3-interpolate/dist/d3-interpolate.min.js"></script>
+    <script src="libs/node_modules/d3-selection/dist/d3-selection.min.js"></script>
+    <script src="libs/node_modules/d3-ease/dist/d3-ease.min.js"></script>
+    <script src="libs/node_modules/d3-transition/dist/d3-transition.min.js" ></script>     -->
+    
 
     <!-- Custom styles for this template -->
     <link href="Content/cover.css" rel="stylesheet">
@@ -40,13 +59,23 @@
         y_browser = 25,
         root;
 
+        //var t = d3.transition()
+            //.duration(1000)
+            //.ease(d3.easeLinear);
+
     var vis;
-    var force = d3.layout.force();
+
+    var viewNodes = [];
+
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function(d) { return d.id; }))
+        .force("charge", d3.forceManyBody())
+        .force("center", d3.forceCenter(width / 2, height / 2));
 
     // Nodes that are not viewing now.
     var freeNodes = [];
 
-    var viewNodes = [];
+
 
     var links = [];
     // Nodes number to view
@@ -54,18 +83,16 @@
 
     vis = d3.select("#vis").append("svg").attr("width", "99%").attr("height", "99%");
 
-    d3.json("people.json", function (json) {
+    d3.json("people.json").then(function (json) {
 
         root = json;
         root.fixed = true;
         root.x = w / 2;
         root.y = h / 4;
 
-
         // Build the path
         var defs = vis.insert("svg:defs")
             .data(["end"]);
-
 
         defs.enter().append("svg:path")
             .attr("d", "M0,0L10,10");
@@ -75,7 +102,7 @@
 
     // Add remove nodes
     d3.interval(function(elapsed){
-            force.nodes().push(freeNodes.pop())
+            force.nodes().push(freeNodes.pop());
             freeNodes.unshift(force.nodes().shift());
             update();
         },
@@ -105,15 +132,14 @@
 
 
         // Restart the force layout.
+
         force.nodes(viewNodes)
-            .links(links)
-            .gravity(0.07)
-            .charge(-1500)
-            .linkDistance(200)
-            .friction(0.5)
-            .linkStrength(function (l, i) {
-                return 1;
-            })
+            //.force.nodes(viewNodes)
+            .force("link", d3.forceLink(links).id(d => d.id)
+                .force("gravity", 0.07)
+                .force("charge",-1500)
+                .force("linkDistance", 200)
+                .force("friction", 0.5))
             .size([w, h])
             .on("tick", tick)
             .start();
@@ -143,12 +169,14 @@
         var nodeEnter = node.enter().append("svg:g")
             .attr("class", "node")
             .attr("transform", function (d) {
-                return "translate(" + d.x - 38 + "," + d.y - 50 + ")";
+                var dtx = d.x - 38;
+                var dty = d.y - 50;
+                return "translate(" + dtx + "," + dty + ")";
             })
             .on("click", click)
             .call(force.drag);
 
-        // Append a circle
+        // Append a rectangle
         nodeEnter.append("svg:rect")
             .attr("width", function (d) {
                 return 76;
@@ -162,7 +190,7 @@
             .attr("y", function (d) {
                 return -50;
             })
-            .style("fill", "#4d555e");
+            .style("fill", "#00000000");
 
 
         // Append images
@@ -187,11 +215,12 @@
                 d3.select("h2").html(d.name);
                 d3.select("h3").html("Take me to " + "<a href='" + d.link + "' >" + d.hero + " web page ⇢" + "</a>");
             })
-
             .on('mouseenter', function () {
+
+               
                 // select element in current context
                 d3.select(this)
-                    .transition()
+                    .transition().duration(1000)
                     .attr("x", function (d) {
                         return -50;
                     })
@@ -225,9 +254,18 @@
                 return d.hero;
             });
 
+            // var t = d3.transition()
+            // .duration(1000)
+            // .ease(d3.easeLinear);
+
+        //var t = d3.transition()
+            //.duration(1000)
+            //.ease(d3.easeLinear);
+
 
         // Exit any old nodes.
         node.exit().remove();
+        //node.exit().transition(tr1).style("opacity", "0").remove();
 
 
         // Re-select for update.
@@ -297,4 +335,4 @@
 
 </script>
 </body>
-</html> 
+</html>    

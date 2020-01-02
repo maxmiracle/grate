@@ -1,10 +1,5 @@
 ﻿{
-  "name": "Серебряный век",
-  "img": "silver.png",
-  "children": [
-    {
-      "name": "poets",
-      "children": [
+   "nodes": [
         {
           "id": 1,
           "classid": "poet",
@@ -79,11 +74,13 @@
           "id": 9,
           "classid": "poet",
           "name": "Александр Блок",
-          "img": "blok_23.jpg",
+          "img": "blok_23.png",
           "link": "",
           "size": 40000
         }
-      ]
-    }
+     ],
+  "links" :
+  [
+
   ]
 }
