@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using EmergentImage.Annotations;
+using System.Collections;
 
 namespace EmergentImage
 {
@@ -17,7 +18,20 @@ namespace EmergentImage
     {
         private SqImgLayer _imgLayer;
         private BitmapImage _bitmap;
+
+        private static readonly NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         bool IsCanOpen { get; set; } = true;
+
+        /// <summary>
+        /// Get list of CommandBindings
+        /// </summary>
+        /// <returns>Collection of CommandBindings</returns>
+        public ICollection CommandBindings()
+        {
+            return new List<CommandBinding>() { 
+                        new CommandBinding(ApplicationCommands.Open, Open, CanOpen),
+                        new CommandBinding(EmergentCommands.AnalyseColors, AnalyseColors, CanAnalyseColors) };
+        }
 
         /// <summary>
         /// Command Open
@@ -29,7 +43,6 @@ namespace EmergentImage
             IsCanOpen = false;
             try
             {
-
                 // Configure open file dialog box
                 Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
                 dlg.FileName = "Image"; // Default file name
@@ -46,7 +59,7 @@ namespace EmergentImage
                     string filename = dlg.FileName;
 
                     Bitmap = new BitmapImage(new Uri(filename));
-                    
+
                     //ImgLayer = new SqImgLayer(bitmap);
                 }
             }
@@ -70,7 +83,7 @@ namespace EmergentImage
         /// <param name="args"></param>
         public void AnalyseColors(object sender, ExecutedRoutedEventArgs args)
         {
-
+            logger.Info("AnalyseColors started");
         }
 
         public void CanAnalyseColors(object sender, CanExecuteRoutedEventArgs eventArgs)

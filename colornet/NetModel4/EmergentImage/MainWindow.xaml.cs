@@ -19,35 +19,12 @@ namespace EmergentImage
     /// </summary>
     public partial class MainWindow : Window
     {
-        EmergentImageContext context;
-
         public MainWindow()
         {
             InitializeComponent();
-
-            EmergentImageContext context = new EmergentImageContext();
-            this.DataContext = context;
-            this.context = context;
-        }
-
-        public void Open(object sender, ExecutedRoutedEventArgs e)
-        {
-            context.Open(sender, e);
-        }
-
-        public void CanOpen(object sender, CanExecuteRoutedEventArgs e)
-        {
-            context.CanOpen(sender, e);
-        }
-
-        public void AnalyseColors(object sender, ExecutedRoutedEventArgs e)
-        {
-            context.AnalyseColors(sender, e);
-        }
-
-        public void CanAnalyseColors(object sender, CanExecuteRoutedEventArgs e)
-        {
-            context.CanAnalyseColors(sender, e);
+            var dataContext = new EmergentImageContext();
+            DataContext = dataContext;
+            this.CommandBindings.AddRange(dataContext.CommandBindings());
         }
     }
 }

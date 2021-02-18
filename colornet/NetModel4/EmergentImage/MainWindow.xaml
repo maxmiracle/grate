@@ -17,10 +17,6 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="24"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.CommandBindings>
-            <CommandBinding Command="ApplicationCommands.Open" CanExecute="CanOpen" Executed="Open"/>
-            <CommandBinding Command="local:EmergentCommands.AnalyseColors" CanExecute="CanAnalyseColors" Executed="AnalyseColors"/>
-        </Grid.CommandBindings>
         <Menu Grid.Row="0" Grid.ColumnSpan="3">
             <MenuItem Header="_File">
                 <MenuItem Header="_Open" Command="ApplicationCommands.Open"/>
