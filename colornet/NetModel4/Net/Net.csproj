@@ -56,8 +56,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorInterop.cs" />
     <Compile Include="CompositionFullnessMeasurement.cs" />
     <Compile Include="Criterion.cs" />
     <Compile Include="CanvasArea.cs" />
@@ -66,6 +68,7 @@
     <Compile Include="CompositionPart.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="ModelParameters.cs" />
+    <Compile Include="PixelColor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqImgLayer.cs" />
     <Compile Include="SqRt.cs" />
@@ -75,6 +78,7 @@
     <Compile Include="Test\TestImages.cs" />
     <Compile Include="ThresholdAssessment.cs" />
     <Compile Include="XY.cs" />
+    <Compile Include="xyColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

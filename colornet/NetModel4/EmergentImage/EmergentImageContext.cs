@@ -84,6 +84,18 @@ namespace EmergentImage
         public void AnalyseColors(object sender, ExecutedRoutedEventArgs args)
         {
             logger.Info("AnalyseColors started");
+            if ( Bitmap == null)
+            {
+                logger.Warn("Image is empty");
+                return;
+            }
+            AnalyseColors(Bitmap);
+        }
+
+        private void AnalyseColors(BitmapImage bitmap)
+        {
+            var pixels = ColorInterop.GetXyColors(bitmap);
+            
         }
 
         public void CanAnalyseColors(object sender, CanExecuteRoutedEventArgs eventArgs)
