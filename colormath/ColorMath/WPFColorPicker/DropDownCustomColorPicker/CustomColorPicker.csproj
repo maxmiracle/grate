@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}</ProjectGuid>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <RootNamespace>DropDownCustomColorPicker</RootNamespace>
-    <AssemblyName>DropDownCustomColorPicker</AssemblyName>
+    <RootNamespace>CustomColorPicker</RootNamespace>
+    <AssemblyName>CustomColorPicker</AssemblyName>
     <WarningLevel>4</WarningLevel>
     <OutputType>Library</OutputType>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
@@ -79,7 +79,7 @@
     <Reference Include="System.Printing" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="CustomColorPicker.xaml">
+    <Page Include="MyColorPicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <Generator>MSBuild:Compile</Generator>
@@ -93,8 +93,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomColorPicker.xaml.cs">
-      <DependentUpon>CustomColorPicker.xaml</DependentUpon>
+    <Compile Include="MyColorPicker.xaml.cs">
+      <DependentUpon>MyColorPicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomColorSelector.xaml.cs">
       <DependentUpon>CustomColorSelector.xaml</DependentUpon>

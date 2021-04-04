@@ -111,6 +111,10 @@
       <Project>{AA5D38E8-2553-44E3-864B-03EB280EC972}</Project>
       <Name>ColorMathLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WPFColorPicker\DropDownCustomColorPicker\DropDownCustomColorPicker.csproj">
+      <Project>{fd2ec7d4-4316-4f8f-8108-8381f0b4b340}</Project>
+      <Name>DropDownCustomColorPicker</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
