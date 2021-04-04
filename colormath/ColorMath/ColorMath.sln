@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMathLib", "ColorMathLib\ColorMathLib.csproj", "{AA5D38E8-2553-44E3-864B-03EB280EC972}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMathManager", "ColorMathManager\ColorMathManager.csproj", "{473C3977-D6E4-4646-814B-4E10B4476956}"
@@ -14,40 +16,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownCustomColorPicker", "WPFColorPicker\DropDownCustomColorPicker\DropDownCustomColorPicker.csproj", "{FD2EC7D4-4316-4F8F-8108-8381F0B4B340}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorMathManager2", "ColorMathManager2\ColorMathManager2.csproj", "{51D114EA-B533-47A9-90A1-19C7CC046A40}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD2EC7D4-4316-4F8F-8108-8381F0B4B340} = {FD2EC7D4-4316-4F8F-8108-8381F0B4B340}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalViewerLibTest", "InternalViewerLibTest\InternalViewerLibTest.csproj", "{BDC7B376-88FD-4222-9A1C-84FEBE169456}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs06
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ColorMathLib\\ColorMathLib.csproj
-		SccProjectName1 = ColorMathLib
-		SccLocalPath1 = ColorMathLib
-		SccProjectUniqueName2 = ColorMathManager\\ColorMathManager.csproj
-		SccProjectName2 = ColorMathManager
-		SccLocalPath2 = ColorMathManager
-		SccProjectUniqueName3 = ColorMathApp\\ColorMathApp.csproj
-		SccProjectName3 = ColorMathApp
-		SccLocalPath3 = ColorMathApp
-		SccProjectUniqueName4 = InternalViewerLib\\InternalViewerLib.csproj
-		SccProjectName4 = InternalViewerLib
-		SccLocalPath4 = InternalViewerLib
-		SccProjectUniqueName5 = ColorMap\\ColorMapView\\ColorMapView.csproj
-		SccProjectName5 = ColorMap/ColorMapView
-		SccLocalPath5 = ColorMap\\ColorMapView
-		SccProjectUniqueName6 = WPFColorPicker\\DropDownCustomColorPicker\\DropDownCustomColorPicker.csproj
-		SccProjectName6 = WPFColorPicker/DropDownCustomColorPicker
-		SccLocalPath6 = WPFColorPicker\\DropDownCustomColorPicker
-		SccProjectUniqueName7 = ColorMathManager2\\ColorMathManager2.csproj
-		SccProjectName7 = ColorMathManager2
-		SccLocalPath7 = ColorMathManager2
-		SccProjectUniqueName8 = InternalViewerLibTest\\InternalViewerLibTest.csproj
-		SccProjectName8 = InternalViewerLibTest
-		SccLocalPath8 = InternalViewerLibTest
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -140,5 +115,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC3F450C-3294-4CEC-B71C-ABC512D58BA1}
 	EndGlobalSection
 EndGlobal
