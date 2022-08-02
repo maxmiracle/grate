@@ -1,6 +1,8 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -9,8 +11,11 @@ using System.Windows.Media.Imaging;
 
 namespace Net
 {
+    
     public class ColorInterop
     {
+        private static Logger log = LogManager.GetCurrentClassLogger();
+
         public static Color GetPixelColor(BitmapSource bitmap, int x, int y)
         {
             Color color;
@@ -57,7 +62,9 @@ namespace Net
                     xyc.y = y;
                     list.Add(xyc);
                 }
+            log.Debug(() => $"Image size: {list.Count}");
             return list;
+            
         }
     }
 }
