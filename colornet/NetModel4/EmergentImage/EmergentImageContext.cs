@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using EmergentImage.Annotations;
 using System.Collections;
+using Net.KMean;
 
 namespace EmergentImage
 {
@@ -18,6 +19,7 @@ namespace EmergentImage
     {
         private SqImgLayer _imgLayer;
         private BitmapImage _bitmap;
+        private List<ColorStatistic> _colorStatistic;
 
         private static readonly NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         bool IsCanOpen { get; set; } = true;
@@ -73,7 +75,6 @@ namespace EmergentImage
         {
             e.CanExecute = IsCanOpen;
             e.Handled = true;
-
         }
 
         /// <summary>
@@ -94,14 +95,23 @@ namespace EmergentImage
 
         private void AnalyseColors(BitmapImage bitmap)
         {
-            var pixels = ColorInterop.GetXyColors(bitmap);
-            
+            ColorStatistic = ColorInterop.AnalyseColors(bitmap);
         }
 
         public void CanAnalyseColors(object sender, CanExecuteRoutedEventArgs eventArgs)
         {
             eventArgs.CanExecute = Bitmap != null;
             eventArgs.Handled = true;
+        }
+
+        public List<ColorStatistic> ColorStatistic 
+        {
+            get => _colorStatistic;
+            set
+            {
+                _colorStatistic = value;
+                OnPropertyChanged();
+            }
         }
 
         public BitmapImage Bitmap

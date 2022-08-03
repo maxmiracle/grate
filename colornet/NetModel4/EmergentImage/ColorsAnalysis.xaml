@@ -49,7 +49,7 @@
         </pieChart:FixedColorStyleSelector>        
     </UserControl.Resources>
     <Grid>
-        <pieChart:RingChartControl Margin="4" SliceStyleSelector="{StaticResource FixedColorSelector}" Width="150" Height="150">
+        <pieChart:RingChartControl x:Name="colorAnalysisPie" Margin="4" Width="150" Height="150">
             <pieChart:RingChartControl.Template>
                 <ControlTemplate TargetType="{x:Type pieChart:RingChartControl}">
                     <Grid>
@@ -73,11 +73,11 @@
             </i:Interaction.Behaviors>
             <pieChart:PieChartControl.ItemsSource>
                 <x:Array Type="{x:Type core:Double}">
+                    <core:Double>5</core:Double>
+                    <core:Double>2</core:Double>
+                    <core:Double>3</core:Double>
                     <core:Double>10</core:Double>
-                    <core:Double>20</core:Double>
-                    <core:Double>30</core:Double>
-                    <core:Double>50</core:Double>
-                    <core:Double>60</core:Double>
+                    <core:Double>80</core:Double>
                 </x:Array>
             </pieChart:PieChartControl.ItemsSource>
         </pieChart:RingChartControl>

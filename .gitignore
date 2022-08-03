@@ -49,3 +49,7 @@
 /colormath/ColorMath/InternalViewerLib/bin/Debug
 /colormath/ColorMath/InternalViewerLibTest/bin/Debug
 /colornet/NetModel4/.vs/NetModel4/FileContentIndex
+/colornet/NetModel4/Net/bin/x64/Debug
+/colornet/NetModel4/EmergentImage/bin/x64/Debug
+/colornet/NetModel4/EmergentImage/obj/x64/Debug
+/colornet/NetModel4/Net/obj/x64/Debug

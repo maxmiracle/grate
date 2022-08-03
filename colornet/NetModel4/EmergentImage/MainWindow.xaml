@@ -35,7 +35,7 @@
 
         <TabControl Grid.Column="2" Grid.Row="1">
             <TabItem Header="Colors">
-                <local:ColorsAnalysis></local:ColorsAnalysis>
+                <local:ColorsAnalysis x:Name="colorAnalysisPie" ColorStatistic="{Binding ColorStatistic}"></local:ColorsAnalysis>
             </TabItem>
         </TabControl>
 

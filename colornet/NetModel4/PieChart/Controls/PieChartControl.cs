@@ -23,7 +23,7 @@ namespace PieChart
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(PieChartControl), new FrameworkPropertyMetadata(typeof(PieChartControl)));
         }
-
+        
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
@@ -297,16 +297,8 @@ namespace PieChart
 
         protected void SetStyle(Path path, PieSliceVal slice)
         {
-            var style = GetStyle(slice, path);
-            if (style != null)
-            {
-                path.Style = style;
-            }
-            else
-            {
-                path.Stroke = GetStrokeBySlice(slice);
-                path.Fill = GetFillBySlice(slice);
-            }
+            path.Stroke = GetStrokeBySlice(slice);
+            path.Fill = GetFillBySlice(slice);
         }
 
         private string GetToolTip(PieSliceVal slice)
@@ -321,6 +313,7 @@ namespace PieChart
 
         protected Brush GetFillBySlice(PieSliceVal slice)
         {
+            if (ColorSource != null) predefinedColors = ColorSource.ToArray();
             Color c = this.predefinedColors.Length > slice.Index 
                 ? predefinedColors[slice.Index] 
                 : Colors.Black;
@@ -328,6 +321,7 @@ namespace PieChart
         }
         protected Brush GetStrokeBySlice(PieSliceVal slice)
         {
+            if (ColorSource != null) predefinedColors = ColorSource.ToArray();
             Color c = this.predefinedColors.Length > slice.Index
                 ? predefinedColors[slice.Index]
                 : Colors.Black;
@@ -342,7 +336,9 @@ namespace PieChart
             Colors.Gray,
             Colors.Yellow
         };
-        
+
+        public IEnumerable<Color> ColorSource { get; set; }
+
         protected struct PieSliceVal
         {
             public int Index;
