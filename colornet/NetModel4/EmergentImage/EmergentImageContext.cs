@@ -49,7 +49,7 @@ namespace EmergentImage
                 Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
                 dlg.FileName = "Image"; // Default file name
                 dlg.DefaultExt = ".jpg"; // Default file extension
-                dlg.Filter = "Images (.jpg)|*.jpg"; // Filter files by extension
+                dlg.Filter = "Images (.jpg)|*.jpg;*.png"; // Filter files by extension
 
                 // Show open file dialog box
                 Nullable<bool> result = dlg.ShowDialog();
